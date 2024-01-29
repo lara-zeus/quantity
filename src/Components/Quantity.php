@@ -9,19 +9,33 @@ class Quantity extends TextInput
 {
     use HasName;
 
-    public string $actionIcon = 'heroicon-o-qr-code';
+    public ?string $heading = null;
+
+    public bool $stacked = false;
 
     protected string $view = 'zeus-quantity::quantity';
 
-    public function actionIcon(string $icon): static
+    public function heading(?string $heading): static
     {
-        $this->actionIcon = $icon;
+        $this->heading = $heading;
 
         return $this;
     }
 
-    public function getActionIcon(): string
+    public function getHeading(): ?string
     {
-        return $this->actionIcon;
+        return $this->heading;
+    }
+
+    public function stacked(bool $stacked = true): static
+    {
+        $this->stacked = $stacked;
+
+        return $this;
+    }
+
+    public function isStacked(): bool
+    {
+        return $this->stacked;
     }
 }
