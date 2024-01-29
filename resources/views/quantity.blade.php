@@ -13,9 +13,9 @@
         :has-inline-label="$hasInlineLabel"
         ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('quantity','lara-zeus/quantity') }}"
         ax-load
-       {{-- x-data="quantityPlugin({
+        x-data="quantityPlugin({
             state: '{{ $getStatePath }}',
-        })"--}}
+        })"
 >
     <x-slot
             name="label"
