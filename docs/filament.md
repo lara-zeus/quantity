@@ -1,32 +1,25 @@
-# Zeus Qr Field
+# Zeus Quantity Input Number Component
 
-Qr Code Input to generate Qr Code with designing options for filamentPHP
+Input Number component, with user-friendly increment and decrement controls
 
 ## Features
 
-- 🔥 set the destination URL
-- 🔥 all options in modal or slidOver
-- 🔥 configure all options
-- 🔥 Available Options:
-    - QR size
-    - QR margin
-    - QR solid front color
-    - QR solid background color
-    - Qr style: square, round, dot
-    - Gradient Color (from,to)
-    - Gradient type (vertical, horizontal, diagonal, inverse_diagonal, radial)
-    - Eye Color (inner,outer)
-    - Eye style (square, circle)
+- 🔥 set max value
+- 🔥 set min value
+- 🔥 add inline heading
+- 🔥 stacked icons for increment and decrement
 
 ## Screenshots
 
-![](https://larazeus.com/images/screenshots/qr/form-1.png)
-![](https://larazeus.com/images/screenshots/qr/form-2.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-1.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-2.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-3.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-4.png)
 
 ## More Details
-**✨ to learn more about Qr, please visit:**
+**✨ to learn more about Quantity, please visit:**
 
-- [Discord](https://discord.com/channels/883083792112300104/1184785550964686919)
-- [Docs](https://larazeus.com/docs/qr)
-- [Github](https://github.com/lara-zeus/qr)
-- [Demo](https://demo.larazeus.com/admin/components-demo/qr-code)
+- [Discord](#)
+- [Docs](https://larazeus.com/docs/quantity)
+- [Github](https://github.com/lara-zeus/quantity)
+- [Demo](https://demo.larazeus.com/admin/components-demo/quantity)

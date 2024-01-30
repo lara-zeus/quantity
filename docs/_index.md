@@ -1,7 +1,7 @@
 ---
 title: v1
-slogan: Qr Code Input to generate Qr Code with designing options for filamentPHP
-githubUrl: https://github.com/lara-zeus/qr
+slogan: filamentphp Input Number component, with user-friendly increment and decrement controls
+githubUrl: https://github.com/lara-zeus/quantity
 branch: v1.x
-icon: bx-qr-scan
+icon: iconoir-input-field
 ---
