@@ -13,15 +13,20 @@
 
 </p>
 
-## features
-- 🔥 
+## Features
+
+- 🔥 set max value
+- 🔥 set min value
+- 🔥 add inline heading
+- 🔥 stacked icons for increment and decrement
 
 
 ## Screenshots
 
-![](https://larazeus.com/images/screenshots/quantity/form-1.png)
-
-![](https://larazeus.com/images/screenshots/quantity/form-2.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-1.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-2.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-3.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-4.png)
 
 ## Demo
 
