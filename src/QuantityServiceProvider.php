@@ -15,14 +15,13 @@ class QuantityServiceProvider extends PackageServiceProvider
     {
         $package
             ->name(static::$name)
-            ->hasTranslations()
             ->hasViews();
     }
 
-    public function packageBooted(): void
+    /*public function packageBooted(): void
     {
         FilamentAsset::register([
             AlpineComponent::make('quantity', __DIR__ . '/../resources/dist/quantity.js'),
         ], 'lara-zeus/quantity');
-    }
+    }*/
 }

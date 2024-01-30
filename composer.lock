@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7544900fc477021a28964da3c9810e82",
+    "content-hash": "478e8fd7e005369108442848f5c6435f",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1168,7 +1168,7 @@
         },
         {
             "name": "filament/actions",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
@@ -1221,16 +1221,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
-                "reference": "6e64acca96de649e8dcd4a7e8ea35a9dfc00fd36"
+                "reference": "2838075f799102811447da14895d6a44fc8b4ad3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/panels/zipball/6e64acca96de649e8dcd4a7e8ea35a9dfc00fd36",
-                "reference": "6e64acca96de649e8dcd4a7e8ea35a9dfc00fd36",
+                "url": "https://api.github.com/repos/filamentphp/panels/zipball/2838075f799102811447da14895d6a44fc8b4ad3",
+                "reference": "2838075f799102811447da14895d6a44fc8b4ad3",
                 "shasum": ""
             },
             "require": {
@@ -1282,11 +1282,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-29T13:20:18+00:00"
+            "time": "2024-01-29T17:43:55+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
@@ -1342,16 +1342,16 @@
         },
         {
             "name": "filament/infolists",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
-                "reference": "67fdb53e032753ad663cf22c21c1ed87b43a1c06"
+                "reference": "498d132772c1b449c547b52c4b7497bf52752092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/infolists/zipball/67fdb53e032753ad663cf22c21c1ed87b43a1c06",
-                "reference": "67fdb53e032753ad663cf22c21c1ed87b43a1c06",
+                "url": "https://api.github.com/repos/filamentphp/infolists/zipball/498d132772c1b449c547b52c4b7497bf52752092",
+                "reference": "498d132772c1b449c547b52c4b7497bf52752092",
                 "shasum": ""
             },
             "require": {
@@ -1389,11 +1389,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-29T13:20:06+00:00"
+            "time": "2024-01-29T17:43:46+00:00"
         },
         {
             "name": "filament/notifications",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -1445,7 +1445,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1502,7 +1502,7 @@
         },
         {
             "name": "filament/tables",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
@@ -1555,7 +1555,7 @@
         },
         {
             "name": "filament/widgets",
-            "version": "v3.2.18",
+            "version": "v3.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
@@ -9965,16 +9965,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.19.2",
+            "version": "0.19.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "bc96a99895bf47c6bfe70ea1b799f0081ed5a903"
+                "reference": "89c895d127b9d248d2af007068a824b5348ef81f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/bc96a99895bf47c6bfe70ea1b799f0081ed5a903",
-                "reference": "bc96a99895bf47c6bfe70ea1b799f0081ed5a903",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/89c895d127b9d248d2af007068a824b5348ef81f",
+                "reference": "89c895d127b9d248d2af007068a824b5348ef81f",
                 "shasum": ""
             },
             "require": {
@@ -10009,7 +10009,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.19.2"
+                "source": "https://github.com/rectorphp/rector/tree/0.19.5"
             },
             "funding": [
                 {
@@ -10017,7 +10017,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T10:58:30+00:00"
+            "time": "2024-01-29T23:53:47+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -12458,9 +12458,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"

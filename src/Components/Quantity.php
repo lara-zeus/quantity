@@ -15,6 +15,13 @@ class Quantity extends TextInput
 
     protected string $view = 'zeus-quantity::quantity';
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->numeric();
+    }
+
     public function heading(?string $heading): static
     {
         $this->heading = $heading;
