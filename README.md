@@ -30,7 +30,7 @@
 
 ## Demo
 
-> Visit our demo site: https://demo.larazeus.com/admin/components-demo/quantity-code
+> Visit our demo site: https://demo.larazeus.com/admin/components-demo/quantity
 
 ## Full Documentation
 
