@@ -100,6 +100,7 @@
                             \Filament\Support\prepare_inherited_attributes($getExtraInputAttributeBag())
                                 ->merge($extraAlpineAttributes, escape: false)
                                 ->merge([
+                                    'class' => 'zeus-quantity',
                                     'disabled' => $isDisabled,
                                     'id' => $id,
                                     'max' => $getMaxValue,
@@ -139,13 +140,13 @@
 
     <style>
         /* Chrome, Safari, Edge, Opera */
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
+        input.zeus-quantity::-webkit-outer-spin-button,
+        input.zeus-quantity::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
 
         /* Firefox */
-        input[type=number] {
+        input[type=number].zeus-quantity {
             -moz-appearance: textfield;
         }
     </style>
