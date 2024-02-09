@@ -9,6 +9,15 @@
     $isDisabled = $isDisabled();
     $getMaxValue = $getMaxValue();
     $getMinValue = $getMinValue();
+
+    $isPrefixInline = $isPrefixInline();
+    $isSuffixInline = $isSuffixInline();
+    $prefixActions = $getPrefixActions();
+    $prefixIcon = $getPrefixIcon();
+    $prefixLabel = $getPrefixLabel();
+    $suffixActions = $getSuffixActions();
+    $suffixIcon = $getSuffixIcon();
+    $suffixLabel = $getSuffixLabel();
 @endphp
 
 <x-dynamic-component
@@ -79,14 +88,23 @@
             },
         }"
     >
-        <div
-            {{ $attributes
-                ->class([
-                    'fi-input-wrp flex rounded-lg shadow-sm transition duration-75
-                    ring-1 ring-gray-950/10 dark:ring-white/20 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-600 dark:[&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-500
-                    bg-white dark:bg-white/5 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-2
-                    bg-white border-0 border-gray-200 dark:border-gray-700',
-                ]) }}
+        <x-filament::input.wrapper
+                :disabled="$isDisabled"
+                :inline-prefix="$isPrefixInline"
+                :inline-suffix="$isSuffixInline"
+                :prefix="$prefixLabel"
+                :prefix-actions="$prefixActions"
+                :prefix-icon="$prefixIcon"
+                :prefix-icon-color="$getPrefixIconColor()"
+                :suffix="$suffixLabel"
+                :suffix-actions="$suffixActions"
+                :suffix-icon="$suffixIcon"
+                :suffix-icon-color="$getSuffixIconColor()"
+                :valid="! $errors->has($statePath)"
+                :attributes="
+                    \Filament\Support\prepare_inherited_attributes($getExtraAttributeBag())
+                    ->class([''])
+                "
         >
             <div class="w-full flex justify-between items-center gap-x-5">
                 <div class="grow">
@@ -95,11 +113,21 @@
                             {{ $getHeading }}
                         </label>
                     @endif
+
+
+
+
+
+
+
+
                     <x-filament::input
                         :attributes="
                             \Filament\Support\prepare_inherited_attributes($getExtraInputAttributeBag())
                                 ->merge($extraAlpineAttributes, escape: false)
                                 ->merge([
+                                    'inlinePrefix' => $isPrefixInline && (count($prefixActions) || $prefixIcon || filled($prefixLabel)),
+                                    'inlineSuffix' => $isSuffixInline && (count($suffixActions) || $suffixIcon || filled($suffixLabel)),
                                     'class' => 'zeus-quantity',
                                     'disabled' => $isDisabled,
                                     'id' => $id,
@@ -112,6 +140,16 @@
                                 ], escape: false)
                         "
                     />
+
+
+
+
+
+
+
+
+
+
                 </div>
 
                 @if($isStacked())
@@ -135,7 +173,8 @@
                 @endif
 
             </div>
-        </div>
+        </x-filament::input.wrapper>
+
     </div>
 
     <style>
