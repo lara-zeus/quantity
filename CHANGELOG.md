@@ -2,6 +2,14 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.2 - 2024-02-09
+
+### What's Changed
+
+* add support for suffix and prefix label and action and icons by @atmonshi in https://github.com/lara-zeus/quantity/pull/3
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.1...1.0.2
+
 ## 1.0.1 - 2024-02-05
 
 ### What's Changed
