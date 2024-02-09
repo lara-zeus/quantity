@@ -114,13 +114,6 @@
                         </label>
                     @endif
 
-
-
-
-
-
-
-
                     <x-filament::input
                         :attributes="
                             \Filament\Support\prepare_inherited_attributes($getExtraInputAttributeBag())
@@ -140,16 +133,6 @@
                                 ], escape: false)
                         "
                     />
-
-
-
-
-
-
-
-
-
-
                 </div>
 
                 @if($isStacked())
