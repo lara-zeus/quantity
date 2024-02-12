@@ -2,6 +2,14 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.3 - 2024-02-12
+
+### What's Changed
+
+* fix getting state path for validation by @atmonshi in https://github.com/lara-zeus/quantity/pull/4
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.2...1.0.3
+
 ## 1.0.2 - 2024-02-09
 
 ### What's Changed
