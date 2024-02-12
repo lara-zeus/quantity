@@ -101,10 +101,6 @@
                 :suffix-icon="$suffixIcon"
                 :suffix-icon-color="$getSuffixIconColor()"
                 :valid="! $errors->has($getStatePath)"
-                :attributes="
-                    \Filament\Support\prepare_inherited_attributes($getExtraAttributeBag())
-                    ->class([''])
-                "
         >
             <div class="w-full flex justify-between items-center gap-x-5">
                 <div class="grow">
