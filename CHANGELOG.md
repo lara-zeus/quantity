@@ -2,6 +2,14 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.4 - 2024-02-18
+
+### What's Changed
+
+* fix min value by @atmonshi in https://github.com/lara-zeus/quantity/pull/6
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.3...1.0.4
+
 ## 1.0.3 - 2024-02-12
 
 ### What's Changed
