@@ -5,11 +5,13 @@ namespace LaraZeus\Quantity\Components;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Concerns\HasName;
 use LaraZeus\Quantity\Traits\HasCharacterLimit;
+use LaraZeus\Quantity\Traits\CanBeShownInsideControl;
 
 class Quantity extends TextInput
 {
     use HasName;
     use HasCharacterLimit;
+    use CanBeShownInsideControl;
 
     public ?string $heading = null;
 
