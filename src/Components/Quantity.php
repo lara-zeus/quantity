@@ -2,12 +2,14 @@
 
 namespace LaraZeus\Quantity\Components;
 
-use Filament\Forms\Components\Concerns\HasName;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Concerns\HasName;
+use LaraZeus\Quantity\Traits\HasCharacterLimit;
 
 class Quantity extends TextInput
 {
     use HasName;
+    use HasCharacterLimit;
 
     public ?string $heading = null;
 
