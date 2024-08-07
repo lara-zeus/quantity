@@ -21,6 +21,7 @@ use it in your resource
     ->default(3)
     ->maxValue(10)
     ->minValue(2)
+    ->characterLimit(2)
     ->stacked()
     
     ->label('select quantity')
@@ -29,6 +30,7 @@ use it in your resource
     ->disabled()
     ->hiddenLabel()
     ->helperText('between 2 and 10')
+    ->characterLimit(2)
     ->columnSpan(1)
     ,
 ```
