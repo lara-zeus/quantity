@@ -18,10 +18,10 @@ weight: 1
 
 ## Screenshots
 
-![](https://larazeus.com/images/screenshots/quantity/quantity-1.png)
-![](https://larazeus.com/images/screenshots/quantity/quantity-2.png)
-![](https://larazeus.com/images/screenshots/quantity/quantity-3.png)
-![](https://larazeus.com/images/screenshots/quantity/quantity-4.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-1.webp)
+![](https://larazeus.com/images/screenshots/quantity/quantity-2.webp)
+![](https://larazeus.com/images/screenshots/quantity/quantity-3.webp)
+![](https://larazeus.com/images/screenshots/quantity/quantity-4.webp)
 
 ## Support
 

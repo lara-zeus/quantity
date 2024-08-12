@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://larazeus.com"><img src="https://larazeus.com/images/lara-zeus-quantity.png?v=1" /></a>
+<a href="https://larazeus.com"><img src="https://larazeus.com/images/lara-zeus-quantity.webp?v=1" /></a>
 </p>
 
 <h4 align="center">Lara-zeus Quantity the Input Number component, with user-friendly increment and decrement controls.</h4>
@@ -23,10 +23,10 @@
 
 ## Screenshots
 
-![](https://larazeus.com/images/screenshots/quantity/quantity-1.png)
-![](https://larazeus.com/images/screenshots/quantity/quantity-2.png)
-![](https://larazeus.com/images/screenshots/quantity/quantity-3.png)
-![](https://larazeus.com/images/screenshots/quantity/quantity-4.png)
+![](https://larazeus.com/images/screenshots/quantity/quantity-1.webp)
+![](https://larazeus.com/images/screenshots/quantity/quantity-2.webp)
+![](https://larazeus.com/images/screenshots/quantity/quantity-3.webp)
+![](https://larazeus.com/images/screenshots/quantity/quantity-4.webp)
 
 ## Demo
 
