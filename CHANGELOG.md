@@ -2,6 +2,15 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.8 - 2024-09-02
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/lara-zeus/quantity/pull/15
+* add steps by @atmonshi in https://github.com/lara-zeus/quantity/pull/17
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.7...1.0.8
+
 ## 1.0.7 - 2024-05-17
 
 ### What's Changed
