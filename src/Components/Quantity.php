@@ -2,12 +2,15 @@
 
 namespace LaraZeus\Quantity\Components;
 
+use Closure;
 use Filament\Forms\Components\Concerns\HasName;
 use Filament\Forms\Components\TextInput;
 
 class Quantity extends TextInput
 {
     use HasName;
+
+    protected int | float | Closure $steps = 1;
 
     public ?string $heading = null;
 
@@ -44,5 +47,17 @@ class Quantity extends TextInput
     public function isStacked(): bool
     {
         return $this->stacked;
+    }
+
+    public function steps(int | float | Closure $interval): static
+    {
+        $this->steps = $interval;
+
+        return $this;
+    }
+
+    public function getSteps(): int | float | Closure
+    {
+        return $this->evaluate($this->steps);
     }
 }
