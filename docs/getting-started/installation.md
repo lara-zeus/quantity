@@ -22,6 +22,7 @@ use it in your resource
     ->maxValue(10)
     ->minValue(2)
     ->stacked()
+    ->steps(2)
     
     ->label('select quantity')
     ->required()
