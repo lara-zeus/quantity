@@ -19,7 +19,7 @@ Input Number component, with user-friendly increment and decrement controls
 ## More Details
 **✨ to learn more about Quantity, please visit:**
 
-- [Discord](#)
+- [Discord](https://discord.com/channels/883083792112300104/1282759018477125716)
 - [Docs](https://larazeus.com/docs/quantity)
 - [Github](https://github.com/lara-zeus/quantity)
 - [Demo](https://demo.larazeus.com/admin/components-demo/quantity)
