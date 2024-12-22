@@ -57,7 +57,7 @@
             isDisabled: {{ $isDisabled ? 'true' : 'false' }},
             increment() {
                 if(! this.isDisabled && this.state < this.maxValue && this.state >= this.minValue){
-                    this.state = this.state + this.steps
+                    this.state = parseInt(this.state) + this.steps
                     $wire.$refresh()
                     if(this.state == this.maxValue){
                         this.isIncrementAllowed = false
@@ -69,7 +69,7 @@
             },
             decrement() {
                 if(! this.isDisabled && this.state > 0 && this.state <= this.maxValue && this.state > this.minValue) {
-                    this.state = this.state - this.steps
+                    this.state = parseInt(this.state) - this.steps
                     $wire.$refresh()
                     if(this.state == this.minValue) {
                         this.isDecrementAllowed = false
