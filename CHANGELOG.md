@@ -2,6 +2,15 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.9 - 2024-12-22
+
+### What's Changed
+
+* fix max value by @atmonshi in https://github.com/lara-zeus/quantity/pull/20
+* fix manually entering the number by @atmonshi in https://github.com/lara-zeus/quantity/pull/21
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.8...1.0.9
+
 ## 1.0.8 - 2024-09-02
 
 ### What's Changed
