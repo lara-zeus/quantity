@@ -49,7 +49,7 @@
 
         x-data="{
             state: $wire.$entangle('{{ $getStatePath }}'),
-            maxValue: @js($getMaxValue),
+            maxValue: @js($getMaxValue ?? 1000000),
             minValue: {{ $getMinValue ?? 0 }},
             steps: {{ $getSteps ?? 1 }},
             isDecrementAllowed: true,
@@ -57,7 +57,6 @@
             isDisabled: {{ $isDisabled ? 'true' : 'false' }},
             increment() {
                 if(! this.isDisabled && this.state < this.maxValue && this.state >= this.minValue){
-
                     this.state = this.state + this.steps
                     $wire.$refresh()
                     if(this.state == this.maxValue){
@@ -71,9 +70,8 @@
             decrement() {
                 if(! this.isDisabled && this.state > 0 && this.state <= this.maxValue && this.state > this.minValue) {
                     this.state = this.state - this.steps
-
                     $wire.$refresh()
-                    if(this.state == this.minValue){
+                    if(this.state == this.minValue) {
                         this.isDecrementAllowed = false
                     } else {
                         this.isIncrementAllowed = true
