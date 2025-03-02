@@ -37,8 +37,8 @@
 
     <div
         {{-- you're more than welocm to refactor this ugly code to use alpine async --}}
-        {{--ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('quantity','lara-zeus/quantity') }}"
-        ax-load
+        {{--x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('quantity','lara-zeus/quantity') }}"
+        x-load
         x-data="quantityPlugin({
             state: '{{ $getStatePath }}',
             maxValue: '{{ $getMaxValue ?? '0' }}',
