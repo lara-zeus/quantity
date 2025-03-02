@@ -2,6 +2,16 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.10 - 2025-03-02
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/lara-zeus/quantity/pull/22
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/lara-zeus/quantity/pull/23
+* update x load by @atmonshi in https://github.com/lara-zeus/quantity/pull/24
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.9...1.0.10
+
 ## 1.0.9 - 2024-12-22
 
 ### What's Changed
