@@ -3,8 +3,8 @@
 namespace LaraZeus\Quantity\Components;
 
 use Closure;
-use Filament\Forms\Components\Concerns\HasName;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Concerns\HasName;
 
 class Quantity extends TextInput
 {
