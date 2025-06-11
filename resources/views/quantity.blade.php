@@ -58,7 +58,11 @@
             increment() {
                 if(! this.isDisabled && this.state < this.maxValue && this.state >= this.minValue){
                     this.state = parseInt(this.state) + this.steps
-                    $wire.$refresh()
+
+                    setTimeout(() => {
+                        $wire.$refresh();
+                    }, 1000);
+
                     if(this.state == this.maxValue){
                         this.isIncrementAllowed = false
                     } else {
@@ -82,18 +86,18 @@
         }"
     >
         <x-filament::input.wrapper
-                :disabled="$isDisabled"
-                :inline-prefix="$isPrefixInline"
-                :inline-suffix="$isSuffixInline"
-                :prefix="$prefixLabel"
-                :prefix-actions="$prefixActions"
-                :prefix-icon="$prefixIcon"
-                :prefix-icon-color="$getPrefixIconColor()"
-                :suffix="$suffixLabel"
-                :suffix-actions="$suffixActions"
-                :suffix-icon="$suffixIcon"
-                :suffix-icon-color="$getSuffixIconColor()"
-                :valid="! $errors->has($getStatePath)"
+            :disabled="$isDisabled"
+            :inline-prefix="$isPrefixInline"
+            :inline-suffix="$isSuffixInline"
+            :prefix="$prefixLabel"
+            :prefix-actions="$prefixActions"
+            :prefix-icon="$prefixIcon"
+            :prefix-icon-color="$getPrefixIconColor()"
+            :suffix="$suffixLabel"
+            :suffix-actions="$suffixActions"
+            :suffix-icon="$suffixIcon"
+            :suffix-icon-color="$getSuffixIconColor()"
+            :valid="! $errors->has($getStatePath)"
         >
             <div class="w-full flex justify-between items-center gap-x-5">
                 <div class="grow">
