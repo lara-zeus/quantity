@@ -5,6 +5,7 @@
 
     $hasInlineLabel = $hasInlineLabel();
     $extraAlpineAttributes = $getExtraAlpineAttributes();
+    $extraAttributeBag = $getExtraAttributeBag();
     $id = $getId();
     $isDisabled = $isDisabled();
     $getMaxValue = $getMaxValue();
@@ -94,6 +95,10 @@
                 :suffix-icon="$suffixIcon"
                 :suffix-icon-color="$getSuffixIconColor()"
                 :valid="! $errors->has($getStatePath)"
+                :attributes="
+                    \Filament\Support\prepare_inherited_attributes($extraAttributeBag)
+                        ->class(['fi-fo-text-input'])
+                "
         >
             <div class="w-full flex justify-between items-center gap-x-5">
                 <div class="grow">
