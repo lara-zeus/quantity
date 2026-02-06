@@ -2,6 +2,16 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 2.0.2 - 2026-02-06
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/34
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/33
+* support extra attributes by @atmonshi in https://github.com/lara-zeus/quantity/pull/36
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/2.0.1...2.0.2
+
 ## 3.0.0 - 2026-02-06
 
 ### What's Changed
