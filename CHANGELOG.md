@@ -2,6 +2,19 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 1.0.11 - 2026-02-06
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/25
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/29
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/30
+* Bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/28
+* Bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/31
+* Update quantity.blade.php by @atmonshi in https://github.com/lara-zeus/quantity/pull/37
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/1.0.10...1.0.11
+
 ## 3.0.1 - 2026-02-06
 
 ### What's Changed
