@@ -2,6 +2,16 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 3.0.0 - 2026-02-06
+
+### What's Changed
+
+support filament 5
+
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/34
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/2.0.1...3.0.0
+
 ## 2.0.1 - 2025-10-17
 
 ### What's Changed
