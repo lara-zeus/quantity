@@ -2,6 +2,15 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 3.0.1 - 2026-02-06
+
+### What's Changed
+
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/33
+* support extra attributes by @atmonshi in https://github.com/lara-zeus/quantity/pull/36
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/3.0.0...3.0.1
+
 ## 2.0.2 - 2026-02-06
 
 ### What's Changed
