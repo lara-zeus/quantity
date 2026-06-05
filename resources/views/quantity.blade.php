@@ -49,41 +49,49 @@
         })"--}}
 
         x-data="{
-            state: $wire.$entangle('{{ $getStatePath }}'),
+            state: $wire.{{ $applyStateBindingModifiers("entangle('{$getStatePath}')") }},
             maxValue: @js($getMaxValue ?? 1000000),
             minValue: {{ $getMinValue ?? 0 }},
             steps: {{ $getSteps ?? 1 }},
             isDecrementAllowed: true,
             isIncrementAllowed: true,
             isDisabled: {{ $isDisabled ? 'true' : 'false' }},
+            isLiveDebounced: {{ $isLiveDebounced() ? 'true' : 'false' }},
+            liveDebounce: '{{ $getLiveDebounce() ?? '500ms' }}',
+            debounceTimeout: null,
+            init() {
+                this.updateState()
+                this.$watch('state', () => this.updateState())
+            },
+            updateState() {
+                let val = Number(this.state || 0)
+                this.isIncrementAllowed = !this.isDisabled && val < this.maxValue
+                this.isDecrementAllowed = !this.isDisabled && val > this.minValue
+            },
             increment() {
-                if(! this.isDisabled && this.state < this.maxValue && this.state >= this.minValue){
-                    this.state = parseInt(this.state) + this.steps
-
-                    setTimeout(() => {
-                        $wire.$refresh();
-                    }, 1000);
-
-                    if(this.state == this.maxValue){
-                        this.isIncrementAllowed = false
-                    } else {
-                        this.isIncrementAllowed = true
-                        this.isDecrementAllowed = true
-                    }
+                if(this.isIncrementAllowed){
+                    this.state = Number(this.state || 0) + this.steps
+                    this.commitState()
                 }
             },
             decrement() {
-                if(! this.isDisabled && this.state > 0 && this.state <= this.maxValue && this.state > this.minValue) {
-                    this.state = parseInt(this.state) - this.steps
-                    $wire.$refresh()
-                    if(this.state == this.minValue) {
-                        this.isDecrementAllowed = false
-                    } else {
-                        this.isIncrementAllowed = true
-                        this.isDecrementAllowed = true
-                    }
+                if(this.isDecrementAllowed) {
+                    this.state = Number(this.state || 0) - this.steps
+                    this.commitState()
                 }
             },
+            commitState() {
+                if (this.isLiveDebounced) {
+                    clearTimeout(this.debounceTimeout);
+                    this.debounceTimeout = setTimeout(() => {
+                        this.$refs.input.value = this.state;
+                        this.$refs.input.dispatchEvent(new Event('input', { bubbles: true }));
+                    }, parseInt(this.liveDebounce) || 500);
+                } else {
+                    this.$refs.input.value = this.state;
+                    this.$refs.input.dispatchEvent(new Event('input', { bubbles: true }));
+                }
+            }
         }"
     >
         <x-filament::input.wrapper
@@ -127,6 +135,8 @@
                                     'readonly' => $isReadOnly(),
                                     'required' => $isRequired(),
                                     'type' => 'number',
+                                    'x-ref' => 'input',
+                                    'x-on:input' => 'state = $event.target.value',
                                     $applyStateBindingModifiers('wire:model') => $getStatePath,
                                 ], escape: false)
                         "
