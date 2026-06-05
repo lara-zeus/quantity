@@ -2,6 +2,17 @@
 
 All notable changes to `Quantity` will be documented in this file
 
+## 3.0.2 - 2026-06-05
+
+### What's Changed
+
+* chore: align docs structure and cleanup by @atmonshi in https://github.com/lara-zeus/quantity/pull/41
+* Bump dependabot/fetch-metadata from 2.5.0 to 3.1.0 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/40
+* Bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/lara-zeus/quantity/pull/38
+* delay live update for increment  and decrement by @atmonshi in https://github.com/lara-zeus/quantity/pull/42
+
+**Full Changelog**: https://github.com/lara-zeus/quantity/compare/3.0.1...3.0.2
+
 ## 1.0.11 - 2026-02-06
 
 ### What's Changed
